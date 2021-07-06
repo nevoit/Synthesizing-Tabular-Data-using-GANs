@@ -1,6 +1,10 @@
 # GANs for tabular data
+ 
+## Authors
+* **Tomer Shahar** - [Tomer Shahar](https://github.com/Tomer-Shahar)
+* **Nevo Itzhak** - [Nevo Itzhak](https://github.com/nevoit)
 
-**Introduction**:
+## Introduction
 
 In this assignment, we were given two tasks: 
 
@@ -10,7 +14,7 @@ In this assignment, we were given two tasks:
 
 We implemented this assignment using mainly Keras and Sklearn.
 
-**Dataset Analysis:**
+## Dataset Analysis
 
 - Two tabular files.
 - The first one (Adult.arff) contains
@@ -40,7 +44,7 @@ Our code consists of three scripts:
 1) *nt\_gan.py* - defines the GAN class, training and testing the models.
 1) *nt\_gg.py* - defines the general generator class, training and testing the models.
 
-**Generative Adversarial Networks (Part 1)**
+## Generative Adversarial Networks (Part 1)
 
 **Architecture:**
 
@@ -183,7 +187,7 @@ For bank-full dataset, the results of the model were:
 
 ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.010.png)
 
-**General Generator (Part 2)**
+## General Generator (Part 2)
 
 In this section we were tasked with creating a blackbox discriminator (in our case, a random-forest model) and to create only a generator that can create samples based on the confidence scores given by the blackbox discriminator. As before, the input for the generator is a vector of random noise, but in addition to that we also provided it with a sample of the probability given by the blackbox model to class 1 (there are only 2 classes so the probabilities simply sum to 1). The goal is for the generator to learn the distribution of the probabilities in addition to creating good synthetic samples.
 
@@ -313,7 +317,7 @@ Here we first uniformly sampled 1000 confidence rates from [0,1]. Then, based on
   
   ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.024.png)
 
-**Discussion:**
+## Discussion
 
 For the adult dataset, the confidence rates for the generated samples are not completely random, but not uniformly distributed. But it is clear that it skews towards the original distribution, which makes sense. However, this is not the case for the bank dataset. Perhaps this can be explained with the high loss rate and the extreme imbalance in the original data.
 
