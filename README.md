@@ -29,7 +29,7 @@ An example for the ‘Adults’ dataset:
 
 An example for the ‘Bank-full’ dataset:
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.002.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.002.png)
 
 **Code Design:**
 
@@ -140,15 +140,15 @@ For adults dataset, the results of the model were:
 - MMDNF = Mean minimum euclidean distance for the not fooled samples was 0.422
 - Several samples that “fooled” the detector:
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.003.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.003.png)
 
 - Several samples that “not fooled” the detector:
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.004.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.004.png)
 
 - Plotting the PCA shows that the fooled samples are very similar to the real data and the not fooled samples are less similar. 
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.005.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.005.png)
 
 - Out of 100 samples, 74 samples were fooled by the discriminator and 26 samples were not fooled by the discriminator.
 - A graph describing the loss of the generator and the discriminator:
@@ -156,7 +156,7 @@ For adults dataset, the results of the model were:
   - The generator loss was extremely decreased while the discriminator loss was quite the same.
   - Eventually the generator and the discriminator were quite coveraged nearly a loss of 0.6.
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.006.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.006.png)
 
 For bank-full dataset, the results of the model were:
 
@@ -164,15 +164,15 @@ For bank-full dataset, the results of the model were:
 - MMDNF = Mean minimum euclidean distance for the not fooled samples was 0.305854238
 - Several samples that “fooled” the detector:
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.007.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.007.png)
 
 - Several samples that “not fooled” the detector:
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.008.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.008.png)
 
 - Plotting the PCA shows that the fooled samples are very similar to the real data and the not fooled samples are less similar. 
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.009.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.009.png)
 
 - Out of 100 samples, 32 samples were fooled by the discriminator and 68 samples were not fooled by the discriminator.
 - A graph describing the loss of the generator and the discriminator:
@@ -180,7 +180,7 @@ For bank-full dataset, the results of the model were:
   - The generator loss was extremely decreased while the discriminator loss was quite the same.
   - Eventually the generator and the discriminator were coveraged nearly a loss of 0.5.
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.010.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.010.png)
 
 **General Generator (Part 2)**
 
@@ -239,9 +239,9 @@ In this part the main goal was for the distribution of confidence probabilities 
 - Class 1 - Min confidence: 0.0 - Max Confidence: 1.0 - Mean confidence: 0.747
 
 
-- Class distribution:![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.011.png)
+- Class distribution:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.011.png)
   - Note that there is some imbalance here, which is nearly identical to the ratio between the mean confidence scores for each class.
-- Probability distribution for class 0 and class 1, for the **test set**:![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.012.png)![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.013.png)
+- Probability distribution for class 0 and class 1, for the **test set**:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.012.png)![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.013.png)
   - Note that the images mirror each other.
 
 
@@ -252,12 +252,12 @@ In this part the main goal was for the distribution of confidence probabilities 
 - Class 0 - Min confidence: 0.0 - Max Confidence: 0.96 - Mean confidence: 0.118
 - Class 1 - Min confidence: 0.04 - Max Confidence: 1.0 - Mean confidence: 0.882
 
-Class distribution:![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.014.png)
+Class distribution:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.014.png)
 
 - The data here is even more imbalanced. The confidence scores reflect this.
 - Confidence score distribution for test set:
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.015.png)![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.016.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.015.png)![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.016.png)
 
 1. **Generator Results:**
 
@@ -265,9 +265,9 @@ Here we first uniformly sampled 1000 confidence rates from [0,1]. Then, based on
 
 **Adult Dataset:**
 
-- Training loss:![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.017.png)
+- Training loss:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.017.png)
 - Confidence score distribution for each class:
-  - Note that they mirror each other.![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.018.png)![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.019.png)
+  - Note that they mirror each other.![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.018.png)![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.019.png)
   - The results are far from uniform, but it is obvious that they are skewed towards the original confidence scores.
 
 - Error rates for class 1:
@@ -275,12 +275,12 @@ Here we first uniformly sampled 1000 confidence rates from [0,1]. Then, based on
 
 **Bank Dataset:**
 
-- Training loss:![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.021.png)
+- Training loss:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.021.png)
 - Confidence score distribution for each class:
   - As before, they mirror each other.
-  - The distribution isn’t uniform, and is slightly skewed in the opposite direction of the distribution for the test set.![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.022.png)![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.023.png)
+  - The distribution isn’t uniform, and is slightly skewed in the opposite direction of the distribution for the test set.![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.022.png)![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.023.png)
 - Error rates for class 1:
-  - **The lowest error rates were achieved for probabilities of around 0.4~**. The highest was for probability of 0. ![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.024.png)
+  - **The lowest error rates were achieved for probabilities of around 0.4~**. The highest was for probability of 0. ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.024.png)
 
 1. **Discussion:**
 
