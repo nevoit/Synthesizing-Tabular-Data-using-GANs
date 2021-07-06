@@ -14,14 +14,14 @@ We implemented this assignment using mainly Keras and Sklearn.
 
 - Two tabular files.
 - The first one (Adult.arff) contains
-  - 15 rows
-    - 6 numeric rows
-    - 9 nominal rows
+  - 15 columns
+    - 6 numeric columns
+    - 9 nominal columns
     - ~32,500 instances
 - The second one (bank-full.arff) contains
-  - 17 rows
-    - 7 numeric rows
-    - 10 nominal rows
+  - 17 columns
+    - 7 numeric columns
+    - 10 nominal columns
     - ~45,000 instances
 
 An example for the ‘Adults’ dataset:
