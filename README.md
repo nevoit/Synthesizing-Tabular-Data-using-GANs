@@ -25,7 +25,7 @@ We implemented this assignment using mainly Keras and Sklearn.
 
 An example for the ‘Adults’ dataset:
 
-![](figures\Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.001.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.001.png)
 
 An example for the ‘Bank-full’ dataset:
 
