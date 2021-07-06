@@ -2,7 +2,11 @@
 
 **Introduction**:
 
-In this assignment, we were given two tasks: (1) create a Generative Adversarial Network (GAN)  that can produce tabular samples from two given datasets, and (2) build a general generative model that receives a black-box as a discriminator and can still generate samples from the tabular data. This is done by attempting to predict the scores given by the black-box model.
+In this assignment, we were given two tasks: 
+
+(1) create a Generative Adversarial Network (GAN) that can produce tabular samples from two given datasets, and
+
+(2) build a general generative model that receives a black-box as a discriminator and can still generate samples from the tabular data. This is done by attempting to predict the scores given by the black-box model.
 
 We implemented this assignment using mainly Keras and Sklearn.
 
