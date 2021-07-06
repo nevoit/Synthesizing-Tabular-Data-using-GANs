@@ -1,4 +1,4 @@
-# Generative-Adversarial-Network-
+# GANs for tabular data
 
 **Introduction**:
 
