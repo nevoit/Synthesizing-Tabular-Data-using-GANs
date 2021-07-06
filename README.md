@@ -1,8 +1,5 @@
 # Generative-Adversarial-Network-
 
-﻿
-Deep Learning Assignment 4 – Summary Report 
-
 **Introduction**:
 
 In this assignment, we were given two tasks: (1) create a Generative Adversarial Network (GAN)  that can produce tabular samples from two given datasets, and (2) build a general generative model that receives a black-box as a discriminator and can still generate samples from the tabular data. This is done by attempting to predict the scores given by the black-box model.
@@ -239,9 +236,12 @@ In this part the main goal was for the distribution of confidence probabilities 
 - Class 1 - Min confidence: 0.0 - Max Confidence: 1.0 - Mean confidence: 0.747
 
 
-- Class distribution:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.011.png)
+- Class distribution:
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.011.png)
   - Note that there is some imbalance here, which is nearly identical to the ratio between the mean confidence scores for each class.
-- Probability distribution for class 0 and class 1, for the **test set**:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.012.png)![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.013.png)
+- Probability distribution for class 0 and class 1, for the **test set**:
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.012.png)
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.013.png)
   - Note that the images mirror each other.
 
 
@@ -252,7 +252,8 @@ In this part the main goal was for the distribution of confidence probabilities 
 - Class 0 - Min confidence: 0.0 - Max Confidence: 0.96 - Mean confidence: 0.118
 - Class 1 - Min confidence: 0.04 - Max Confidence: 1.0 - Mean confidence: 0.882
 
-Class distribution:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.014.png)
+Class distribution:
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.014.png)
 
 - The data here is even more imbalanced. The confidence scores reflect this.
 - Confidence score distribution for test set:
@@ -265,9 +266,12 @@ Here we first uniformly sampled 1000 confidence rates from [0,1]. Then, based on
 
 **Adult Dataset:**
 
-- Training loss:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.017.png)
+- Training loss:
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.017.png)
 - Confidence score distribution for each class:
-  - Note that they mirror each other.![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.018.png)![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.019.png)
+  - Note that they mirror each other.
+  ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.018.png)
+  ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.019.png)
   - The results are far from uniform, but it is obvious that they are skewed towards the original confidence scores.
 
 - Error rates for class 1:
@@ -275,16 +279,19 @@ Here we first uniformly sampled 1000 confidence rates from [0,1]. Then, based on
 
 **Bank Dataset:**
 
-- Training loss:![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.021.png)
+- Training loss:
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.021.png)
 - Confidence score distribution for each class:
   - As before, they mirror each other.
-  - The distribution isn’t uniform, and is slightly skewed in the opposite direction of the distribution for the test set.![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.022.png)![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.023.png)
+  - The distribution isn’t uniform, and is slightly skewed in the opposite direction of the distribution for the test set.
+  ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.022.png)
+  ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.023.png)
 - Error rates for class 1:
-  - **The lowest error rates were achieved for probabilities of around 0.4~**. The highest was for probability of 0. ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.024.png)
+  - **The lowest error rates were achieved for probabilities of around 0.4~**. The highest was for probability of 0. 
+  ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.024.png)
 
-1. **Discussion:**
+**Discussion:**
 
 For the adult dataset, the confidence rates for the generated samples are not completely random, but not uniformly distributed. But it is clear that it skews towards the original distribution, which makes sense. However, this is not the case for the bank dataset. Perhaps this can be explained with the high loss rate and the extreme imbalance in the original data.
 
 For both datasets, our generator indeed suffered from mode collapse and only generated samples from the class with more instances in the training set. This obviously hindered the results. Since only class 1 was generated, obviously we only have results for that one so it is difficult to compare results between classes. Perhaps a better approach would be to generate synthetic samples (e.g, SMOTE) to ensure better training data, or choose a feature that distributes more evenly.
-
