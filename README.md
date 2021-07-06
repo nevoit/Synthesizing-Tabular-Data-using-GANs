@@ -25,7 +25,7 @@ We implemented this assignment using mainly Keras and Sklearn.
 
 An example for the ‘Adults’ dataset:
 
-![](Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.001.png)
+![](figures\Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.001.png)
 
 An example for the ‘Bank-full’ dataset:
 
