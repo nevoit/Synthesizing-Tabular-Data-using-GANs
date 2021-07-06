@@ -241,12 +241,17 @@ In this part the main goal was for the distribution of confidence probabilities 
 
 
 - Class distribution:
+
 ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.011.png)
-  - Note that there is some imbalance here, which is nearly identical to the ratio between the mean confidence scores for each class.
+
+- Note that there is some imbalance here, which is nearly identical to the ratio between the mean confidence scores for each class.
 - Probability distribution for class 0 and class 1, for the **test set**:
+
 ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.012.png)
+
 ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.013.png)
-  - Note that the images mirror each other.
+
+- Note that the images mirror each other.
 
 
 
@@ -257,25 +262,34 @@ In this part the main goal was for the distribution of confidence probabilities 
 - Class 1 - Min confidence: 0.04 - Max Confidence: 1.0 - Mean confidence: 0.882
 
 Class distribution:
+
 ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.014.png)
 
 - The data here is even more imbalanced. The confidence scores reflect this.
 - Confidence score distribution for test set:
 
-![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.015.png)![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.016.png)
 
-1. **Generator Results:**
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.015.png)
+
+![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.016.png)
+
+**Generator Results:**
 
 Here we first uniformly sampled 1000 confidence rates from [0,1]. Then, based on these rates we generated 1,000 samples. The goal being that the discriminators confidence rate also distributed uniformly. This is of course a hard task considering how skewed the confidence rate is, as seen above, since class 1 is much more likely (3 times more for the first data set and 8 times more for the second one).
 
 **Adult Dataset:**
 
 - Training loss:
+
 ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.017.png)
+
 - Confidence score distribution for each class:
   - Note that they mirror each other.
+  
   ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.018.png)
+  
   ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.019.png)
+  
   - The results are far from uniform, but it is obvious that they are skewed towards the original confidence scores.
 
 - Error rates for class 1:
@@ -288,10 +302,15 @@ Here we first uniformly sampled 1000 confidence rates from [0,1]. Then, based on
 - Confidence score distribution for each class:
   - As before, they mirror each other.
   - The distribution isn’t uniform, and is slightly skewed in the opposite direction of the distribution for the test set.
+  
   ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.022.png)
+  
   ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.023.png)
+  
 - Error rates for class 1:
+
   - **The lowest error rates were achieved for probabilities of around 0.4~**. The highest was for probability of 0. 
+  
   ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.024.png)
 
 **Discussion:**
