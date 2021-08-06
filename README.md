@@ -285,6 +285,7 @@ Here we first uniformly sampled 1000 confidence rates from [0,1]. Then, based on
 
 - Training loss:
 
+
 ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.017.png)
 
 - Confidence score distribution for each class:
@@ -302,7 +303,9 @@ Here we first uniformly sampled 1000 confidence rates from [0,1]. Then, based on
 **Bank Dataset:**
 
 - Training loss:
+- 
 ![](https://github.com/nevoit/Generative-Adversarial-Network-/blob/master/figures/Aspose.Words.36be2542-1776-4b1c-8010-360ae82480ae.021.png)
+
 - Confidence score distribution for each class:
   - As before, they mirror each other.
   - The distribution isn’t uniform, and is slightly skewed in the opposite direction of the distribution for the test set.
