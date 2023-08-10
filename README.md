@@ -1,8 +1,7 @@
 # GANs for tabular data
  
 ## Authors
-* **Tomer Shahar** - [Tomer Shahar](https://github.com/Tomer-Shahar)
-* **Nevo Itzhak** - [Nevo Itzhak](https://github.com/nevoit)
+[Tomer Shahar](https://github.com/Tomer-Shahar) and [Nevo Itzhak](https://www.linkedin.com/in/nevoitzhak/)
 
 ## Introduction
 
